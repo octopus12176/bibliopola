@@ -1,0 +1,40 @@
+.text-center, .field, .actions, .links {
+    text-align: center;
+}
+
+.field {
+    font-size:0;
+}
+
+.field .text {
+    text-align: left;
+    display: inline-block;
+    font-size:14px;
+}
+
+
+.actions {
+    margin-bottom: 26px;
+}
+
+.actions .text {
+    text-align: left;
+    display: inline-block;
+    font-size:14px;
+    background-color: hotpink;
+}
+
+.links .text {
+    text-align: left;
+    display: inline-block;
+    font-size:14px;
+}
+
+.actions input[type="submit"]:hover {
+    cursor: pointer;
+    background: #f0c14b;
+}
+
+.links a:hover {
+    background: #e7e9ec;
+}
