@@ -19,6 +19,6 @@ module Bibliopola
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
     # デプロイするサービスのホストを追加する
-    config.hosts << 'xxx.onrender.com'
+    config.hosts << 'bibliopola.onrender.com'
   end
 end
