@@ -84,3 +84,4 @@ production:
   database: bibliopola_production
   username: admin
   password: <%= ENV["BIBLIOPOLA_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
