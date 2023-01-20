@@ -81,7 +81,7 @@ test:
 #
 production:
   <<: *default
+  host: <%= ENV['DATABASE_HOST'] %>
   database: bibliopola_production
-  username: admin
+  username: <%= ENV['DATABASE_USERNAME'] %>
   password: <%= ENV["BIBLIOPOLA_DATABASE_PASSWORD"] %>
-  url: <%= ENV['DATABASE_URL'] %>
