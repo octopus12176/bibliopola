@@ -83,7 +83,8 @@ production:
   <<: *default
   adapter: postgresql
   encoding: unicode
+  database: <%= ENV["DATABASE_NAME"] %>
   host: <%= ENV['DATABASE_HOST'] %>
   username: <%= ENV['DATABASE_USERNAME'] %>
   password: <%= ENV["DATABASE_PASSWORD"] %>
-  database: bibliopola_production
+  port: <%= ENV["DATABASE_PORT"] %>
