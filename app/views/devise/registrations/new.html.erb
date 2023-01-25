@@ -1,31 +1,45 @@
-<%= stylesheet_link_tag 'sign_up', :media => "all" %>
-<h2 class="text-center">新規会員登録</h2>
+<%= stylesheet_link_tag 'sign_up', :media => "all", 'data-turbolinks-track': 'reload' %>
+<h1 class="text-center">新規会員登録</h1>
+<div style="text-align: center">
+  <%= image_tag '本のアイコン素材.png' %>
+</div>
+<div class="box">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
+    <p class="text">
     <%= f.label :メールアドレス %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </p>
   </div>
 
   <div class="field">
+    <p class="text">
     <%= f.label :パスワード %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> 文字まで)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
+    </p>
   </div>
 
   <div class="field">
-    <%= f.label :パスワード確認用 %><br />
+    <p class="text">
+    <%= f.label :確認用パスワード %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    </p>
   </div>
 
   <div class="actions">
-    <%= f.submit "新規登録" %>
+    <p class="button">
+    <%= f.submit "会員登録" %>
+    </p>
   </div>
 <% end %>
 
 <div class="links">
+  <%= "既にアカウントを持っているならここから" %>
 <%= render "devise/shared/links" %>
+</div>
 </div>

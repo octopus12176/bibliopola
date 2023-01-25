@@ -1,0 +1,39 @@
+* {
+    text-decoration: none;
+}
+
+.box {
+    width: 400px;
+    height: 450px;
+    margin: 60px auto 0;
+}
+
+.text-center, .field, .actions, .links {
+    text-align: center;
+}
+
+.field .text {
+    text-align: left;
+    display: inline-block;
+    font-size:14px;
+}
+
+.button {
+    margin-bottom: 26px;
+}
+
+.button input[type="submit"] {
+    color: white;
+    border-style: none;
+    width: 50%;
+    height: 40px;
+    background: linear-gradient(to bottom,#EF536F,#EF536F);
+    border-radius: 3px;
+    border: 1px #a88734 solid;
+}
+
+.button input[type="submit"]:hover {
+    cursor: pointer;
+    background: #f0c14b;
+}
+
