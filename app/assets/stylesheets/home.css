@@ -1,0 +1,42 @@
+.inline-block_test {
+    display: inline-block;      /* インラインブロック要素にする */
+    background-color:  #ccc;    /* 背景色指定 */
+    padding: 60px;              /* 余白指定 */
+}
+
+header {
+    padding-bottom:  10px;      /* 余白指定 */
+}
+
+.global {
+    padding:  0;                /* ulタグのデフォルトCSSを打ち消し */
+    margin:  0;                 /* ulタグのデフォルトCSSを打ち消し */
+    list-style: none;           /* ulタグのデフォルトCSSを打ち消し */
+    text-align:  center;        /* 子要素を左右中央揃え */
+}
+
+.global > li {
+    display:  inline-block;     /* インラインブロック要素にする */
+    width: 100px;               /* 幅指定 */
+    vertical-align:  middle;    /* 要素を上下中央で揃える */
+}
+
+.global > li > a {
+    color: #222;                /* 文字の色指定 */
+    background-color:  #ccc;    /* 背景色指定 */
+    text-decoration:  none;     /* 文字のデフォルトCSSを打ち消し */
+    display:  inline-block;     /* インラインブロック要素にする */
+    padding:  10px;             /* 余白指定 */
+    width:  100%;               /* 幅指定 */
+    box-sizing:  border-box;    /* 崩れ防止 */
+}
+
+main {
+    border: solid 2px;          /* 枠線指定 */
+    padding: 50px 10px;         /* 余白指定 */
+}
+
+footer {
+    background-color:  #ccc;    /* 背景色指定 */
+    padding:  10px;             /* 余白指定 */
+}
