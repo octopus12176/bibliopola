@@ -1,7 +1,7 @@
 .inline-block_test {
     display: inline-block;      /* インラインブロック要素にする */
     background-color:  #ccc;    /* 背景色指定 */
-    padding: 60px;              /* 余白指定 */
+    padding: 20px;              /* 余白指定 */
 }
 
 header {
